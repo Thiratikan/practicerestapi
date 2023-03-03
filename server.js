@@ -3,7 +3,7 @@
 //load all the environment variables from.env
 require("dotenv").config();
 
-// pul express librarian
+// pull express librarian
 const express = require("express");
 // run express function
 const app = express();
@@ -11,7 +11,7 @@ const app = express();
 const mongoose = require("mongoose");
 
 // connect to the database
-mongoose.connect(process.env.Database_url, { useNewUrlParser: true });
+mongoose.connect(process.env.DATABASE_URL, { useNewUrlParser: true });
 
 const db = mongoose.connection;
 // allows to see if there is a problem when trying to connect to the database
