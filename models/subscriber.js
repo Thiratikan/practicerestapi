@@ -7,11 +7,11 @@ const subscriberSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  subscriberToChanel: {
+  subscribedToChannel: {
     type: String,
     required: true,
   },
-  subscriberDate: {
+  subscribeDate: {
     type: Date,
     required: true,
     default: Date.now,
@@ -21,4 +21,4 @@ const subscriberSchema = new mongoose.Schema({
 
 //model takes two properties subscriber, and subscriberSchema. Schema co responds with subscriber
 //We need the model function because when we import it to the different fil, the model will allow to interact with the database by using the schema
-module.exports = mongoose.model("subscriber", subscriberSchema);
+module.exports = mongoose.model("Subscriber", subscriberSchema);

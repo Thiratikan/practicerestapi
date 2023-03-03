@@ -27,4 +27,4 @@ const subscribersRouter = require("./routes/subscribers");
 app.use("/subscribers", subscribersRouter);
 
 // tell port we want to listen on, and run when server gets started
-app.listen(3000, () => console.log("Server has started"));
+app.listen(3000, () => console.log("Server Started"));
